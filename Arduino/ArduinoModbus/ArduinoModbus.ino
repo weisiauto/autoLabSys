@@ -27,8 +27,9 @@ digitalWrite(LEDPin,mb.Coil(LED_COIL));
 if (mb.Coil(LED_COIL)==true)
 {
   delay(1000);
-  for(int j=100;j<=200;j++)
+  for(int j=500;j<=1000;j++)
   {
+    
     mb.Hreg(j,analogRead(A0));
   }
 }

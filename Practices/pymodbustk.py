@@ -9,7 +9,7 @@
 
 import serial
 import time
-
+0
 import modbus_tk
 import modbus_tk.defines as cst
 from modbus_tk import modbus_rtu
@@ -29,7 +29,7 @@ def main():
         master.set_timeout(5.0)
         master.set_verbose(True)
         logger.info("waiting......")
-        time.sleep(5)
+        time.sleep(2)
         logger.info("connected")
         command=input("Input 0 or 1 to control /default=1:")
         if(int(command)==0):
